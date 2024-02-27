@@ -22,6 +22,8 @@ public class BackgroundEnemyService implements Runnable{
     @Override
     public void run() {
         while(enemy.getState()==0){
+            int x = (int) (Math.random() * 100);
+            if(x == 1) enemy.up();
 
             // wall crash check
             Color leftColor = new Color(image.getRGB(enemy.getX() - 10, enemy.getY() + 25));
