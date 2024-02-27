@@ -162,4 +162,18 @@ public class Bubble extends JLabel implements Moveable {
             throw new RuntimeException(e);
         }
     }
+    public void clearBubbled(){
+        new Thread(()->{
+            try{
+                up = false;
+                setIcon(bomb);
+                Thread.sleep(1000);
+                mContext.remove(this);
+                mContext.repaint();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }).start();
+
+    }
 }

@@ -31,12 +31,13 @@ public class Enemy extends JLabel implements Moveable {
         this.mContext = mContext;
         initObject();
         initSetting();
-        //initBackgroundPlayerService();
+        initBackgroundEnemyService();
+        right();
     }
 
 
     private void initBackgroundEnemyService() {
-       // new Thread(new BackgroundPlayerService(this)).start();
+        new Thread(new BackgroundEnemyService(this)).start();
     }
 
     public void initObject(){

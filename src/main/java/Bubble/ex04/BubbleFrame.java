@@ -3,9 +3,11 @@ package Bubble.ex04;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 
 @Getter @Setter
 public class BubbleFrame extends JFrame {
@@ -70,7 +72,7 @@ public class BubbleFrame extends JFrame {
         add(player);
         enemy = new Enemy(this);
         add(enemy);
-
+        new BGM();
     }
 
     private void initSetting() {
