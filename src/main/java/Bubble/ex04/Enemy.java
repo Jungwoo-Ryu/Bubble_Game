@@ -79,6 +79,7 @@ public class Enemy extends JLabel implements Moveable {
         }
         ).start();
     }
+    // commit
 
     @Override
     public void right() {
