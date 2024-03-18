@@ -1,10 +1,9 @@
-package Bubble.ex04;
+package Bubble.game;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.util.List;
 
 public class BackgroundEnemyService implements Runnable{
     private BufferedImage image;

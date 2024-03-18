@@ -1,13 +1,11 @@
-package Bubble.ex04;
+package Bubble.game;
 
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.IOException;
 
 @Getter @Setter
 public class BubbleFrame extends JFrame {
