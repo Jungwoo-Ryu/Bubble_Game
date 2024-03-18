@@ -1,8 +1,7 @@
-package Bubble.ex04;
+package Bubble.game;
 
 import javax.sound.sampled.*;
 import java.io.File;
-import java.io.IOException;
 
 public class BGM {
     public BGM(){

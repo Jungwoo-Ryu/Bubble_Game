@@ -1,4 +1,4 @@
-package Bubble.ex04;
+package Bubble.game;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

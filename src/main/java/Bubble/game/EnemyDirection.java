@@ -1,4 +1,4 @@
-package Bubble.ex04;
+package Bubble.game;
 
 public enum EnemyDirection {
     LEFT,RIGHT;
